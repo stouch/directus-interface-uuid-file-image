@@ -22,10 +22,7 @@
 		"forceConsistentCasingInFileNames": true,
 		"allowSyntheticDefaultImports": true,
 		"isolatedModules": true,
-		"rootDir": "./src",
-		"paths": {
-			"@/*": ["./src/directus/app/src/*"]
-		},
+		"rootDir": "./src"
 	},
-	"include": ["./src/**/*.ts"],
+	"include": ["./src/**/*.ts"]
 }
