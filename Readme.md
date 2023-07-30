@@ -1,13 +1,25 @@
 # Installation
 
+Switch to node v18.16.0 (using .nvmrc) :
+```bash
+nvm use
 ```
-npm i
+
+Install and build :
+```bash
+npm ci
 npm run build
 ```
 
-And then move the built `dist/index.js` file into a new directory of your `extensions/interfaces`, for example `extensions/interfaces/uuid-file-image/index.js`.
+Then, move the built `dist/index.js` file into a new directory of your `extensions/interfaces`, for example `extensions/interfaces/uuid-file-image/index.js`.
 
+That's it!
 
+If you use docker, don't forget to mount the `interfaces` volume pointing to the directory containing `uuid-file-image/index.js`:
+```yaml
+    volumes:
+      - ./path/to/local/interfaces:/directus/extensions/interfaces/
+```
 
 # Example of usage in a JSON repeater field
 
