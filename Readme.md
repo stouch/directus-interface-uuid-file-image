@@ -1,10 +1,12 @@
 # Installation
 
 ```
-npx directus-extension build
+npm i
+npm run build
 ```
 
-And then move the built `dist/index.js` file into a new directory of your `extensions/interfaces`
+And then move the built `dist/index.js` file into a new directory of your `extensions/interfaces`, for example `extensions/interfaces/uuid-file-image/index.js`.
+
 
 
 # Example of usage in a JSON repeater field
